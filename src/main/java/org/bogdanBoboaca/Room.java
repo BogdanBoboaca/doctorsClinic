@@ -1,5 +1,7 @@
 package org.bogdanBoboaca;
 
-public class Room {
+public enum Room {
+
+    CHILDREN, PUPIL, STUDENT, ADULTS
 
 }

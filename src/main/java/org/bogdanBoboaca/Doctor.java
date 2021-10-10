@@ -1,8 +1,9 @@
 package org.bogdanBoboaca;
 
 import lombok.Data;
-import org.springframework.data.annotation.Id;
+//import org.springframework.data.annotation.Id;
 
+import javax.persistence.Id;
 import javax.validation.constraints.Size;
 
 @Data

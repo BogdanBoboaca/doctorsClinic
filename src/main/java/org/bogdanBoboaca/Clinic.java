@@ -1,15 +1,27 @@
 package org.bogdanBoboaca;
 
+import java.io.IOException;
+
 public class Clinic {
 
-    private void examine () {
+    public void examine () throws IOException {
 
         PointB pointB = new PointB();
         pointB.generatePatients();
 
+        PointD pointD = new PointD();
+        pointD.storePatients();
+
         PointA pointA = new PointA();
         pointA.generateDoctors();
-    }
 
+        PointE pointE = new PointE();
+        pointE.storeDoctors();
+
+        PointC pointC = new PointC();
+        pointC.printDoctorsAndPatients();
+        System.out.print("List of Doctors and Patients" + pointC.summary());
+
+    }
 
 }

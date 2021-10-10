@@ -2,6 +2,7 @@ package org.bogdanBoboaca;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class PointA {
 
@@ -12,8 +13,13 @@ public class PointA {
 
         List doctors = new ArrayList<>();
         for (int i = 0; i<8; i++){
+            Random r = new Random();
+            int low = 1000;
+            int high = 9999;
+            int result = r.nextInt(high-low) + low;
+
             Doctor doctor = new Doctor();
-            doctor.setIdentificationNumber(i);
+            doctor.setIdentificationNumber(result);
             doctor.setFirstName(firstNames[i]);
             doctor.setLastName(lastNames[i]);
             doctor.setAge(ages[i]);

@@ -6,10 +6,10 @@ import java.io.IOException;
 
 public class PointE {
 
-    public void storePatients() throws IOException {
+    public void storeDoctors() throws IOException {
         PointA pointA = new PointA();
 
-        BufferedWriter writer = new BufferedWriter(new FileWriter("Users/bogdanboboaca/Programming/CursJava/finalProject/doctorClinic"));
+        BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/bogdanboboaca/Programming/CursJava/finalProject/doctorsClinic/Doctors.txt"));
         writer.write(pointA.generateDoctors().toString());
         writer.close();
     }

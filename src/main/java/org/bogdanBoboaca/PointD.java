@@ -9,7 +9,8 @@ public class PointD {
     public void storePatients() throws IOException {
         PointB pointB = new PointB();
 
-        BufferedWriter writer = new BufferedWriter(new FileWriter("Users/bogdanboboaca/Programming/CursJava/finalProject/doctorClinic"));
+        BufferedWriter writer = new BufferedWriter(
+                new FileWriter("/Users/bogdanboboaca/Programming/CursJava/finalProject/doctorsClinic/Patients.txt"));
         writer.write(pointB.generatePatients().toString());
         writer.close();
     }
