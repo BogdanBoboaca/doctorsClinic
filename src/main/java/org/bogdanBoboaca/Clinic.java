@@ -20,7 +20,7 @@ public class Clinic {
 
         PointC pointC = new PointC();
         pointC.printDoctorsAndPatients();
-        System.out.print("List of Doctors and Patients" + pointC.summary());
+        System.out.print("Summary of Patients" + pointC.summary());
 
     }
 
